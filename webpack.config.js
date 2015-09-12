@@ -22,3 +22,13 @@ config.resolve = {
   // you'll be able to do `require('./utils')` instead of `require('./utils.js')`
   extensions: ['', '.js'],
 };
+
+config.module = {
+  loaders: [
+    {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loaders: ["babel-loader"],
+    }
+  ]
+};

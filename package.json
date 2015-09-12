@@ -3,11 +3,15 @@
   "description": "dnb_pomodoro",
   "version": "1.0.0",
   "devDependencies": {
-    "webpack": "~1.4.13",
+    "babel-core": "^5.8.24",
+    "babel-loader": "^5.3.2",
+    "exports-loader": "~0.6.2",
     "expose-loader": "~0.6.0",
     "imports-loader": "~0.6.3",
-    "exports-loader": "~0.6.2",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "webpack": "~1.4.13"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^0.13.3"
+  }
 }

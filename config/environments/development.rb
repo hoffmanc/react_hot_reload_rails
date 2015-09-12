@@ -38,4 +38,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # use our app layout for the rails-provided root
+  Rails::WelcomeController.layout Rails.root.join(*%w{app views layouts application}).to_s
 end
