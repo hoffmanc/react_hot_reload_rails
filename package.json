@@ -1,0 +1,19 @@
+{
+  "name": "react_hot_reload_rails",
+  "description": "react_hot_reload_rails",
+  "version": "1.0.0",
+  "devDependencies": {
+    "babel-core": "^5.8.24",
+    "babel-loader": "^5.3.2",
+    "exports-loader": "~0.6.2",
+    "expose-loader": "~0.6.0",
+    "imports-loader": "~0.6.3",
+    "lodash": "~2.4.1",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "~1.4.13",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}
