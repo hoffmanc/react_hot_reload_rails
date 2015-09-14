@@ -41,4 +41,9 @@ Rails.application.configure do
 
   # use our app layout for the rails-provided root
   Rails::WelcomeController.layout Rails.root.join(*%w{app views layouts application}).to_s
+
+  # In development send bundle.js to the webpack-dev-server running on 8080
+  config.action_controller.asset_host = ->(source) {
+    "http://localhost:8080" if source =~ /bundle\.js$/i
+  }
 end

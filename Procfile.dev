@@ -1,0 +1,4 @@
+# foreman start -f Procfile.dev
+
+web: rails s
+webpack: webpack-dev-server --config webpack.hot.config.js --hot --progress --inline
