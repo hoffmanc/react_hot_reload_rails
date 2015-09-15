@@ -8,7 +8,7 @@ export default React.createClass({
           Hello, <b>{this.props.name}!</b>
         </p>
         <p>
-          <textarea name='foo' rows='5'>Change this text, then change some other part of the jsx and save it.</textarea>
+          <textarea name='foo' rows='5' cols='50'>Change this text, then change some other part of the jsx (e.g., the name attribute in entry.jsx) and save it.</textarea>
         </p>
       </div>
     );
