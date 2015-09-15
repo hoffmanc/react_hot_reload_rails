@@ -10,6 +10,7 @@ A project set up with react + webpack (hot reload in dev) + rails
 
     bundle
     npm install
+    npm install webpack-dev-server --global # makes the webpack-dev-server command available
     foreman start -f Procfile.dev
 
 # See Hot Reload in Action
