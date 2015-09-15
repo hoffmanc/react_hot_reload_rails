@@ -5,7 +5,7 @@ var config = module.exports = {
   // the base path which will be used to resolve entry points
   context: __dirname,
   // the main entry point for our application's frontend JS
-  entry: './client/entry.js',
+  entry: './client/entry.jsx',
 };
 
 config.output = {
@@ -20,5 +20,15 @@ config.output = {
 config.resolve = {
   // tell webpack which extensions to auto search when it resolves modules. With this,
   // you'll be able to do `require('./utils')` instead of `require('./utils.js')`
-  extensions: ['', '.js'],
+  extensions: ['', '.jsx', '.js'],
+};
+
+config.module = {
+  loaders: [
+    {
+      test: /\.jsx?$/,
+      exclude: /node_modules/,
+      loaders: ["babel-loader"],
+    }
+  ]
 };
