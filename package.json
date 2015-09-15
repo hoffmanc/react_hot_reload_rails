@@ -1,6 +1,6 @@
 {
-  "name": "dnb_pomodoro",
-  "description": "dnb_pomodoro",
+  "name": "react_hot_reload_rails",
+  "description": "react_hot_reload_rails",
   "version": "1.0.0",
   "devDependencies": {
     "babel-core": "^5.8.24",
